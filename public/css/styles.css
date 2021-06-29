@@ -25,7 +25,7 @@ body {
  }
 
  .black-3c85d {
-    background-color: #E1E1E1;
+    background-color: #58AC8A;
     color: #FFFFFF;
 }
 
@@ -71,4 +71,21 @@ body {
     clear:both;
     border-radius: 5px;
     float : left;    
+}
+.ui.black.button, .ui.black.buttons .button {
+    background-color: rgb(88, 172, 138);
+    color: #fff;
+    text-shadow: none;
+    background-image: none;
+}
+.ui.black.button:hover, .ui.black.buttons .button:hover {
+    background-color: #182b1b;
+    color: #fff;
+    text-shadow: none;
+}
+.ui.grey.button, .ui.grey.buttons .button {
+    background-color: #58AC8A;
+    color: #fff;
+    text-shadow: none;
+    background-image: none;
 }

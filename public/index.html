@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Chess Cube</title>
+    <title>Chess MATE</title>
     <link rel="icon" href="./img/icon.jpg">
     <link rel="stylesheet" type="text/css" href="./css/semantic.min.css">
     <link rel="stylesheet" href="./css/chessboard-1.0.0.min.css">
@@ -20,13 +20,13 @@
     </audio>
     <!-- Navbar -->
     <div>
-        <div style="margin: 0; border-bottom: 4px solid gray; padding: 3px 0; " class="ui secondary menu">
-            <img src="./img/icon.png" style="width:80px;height:80px;">
-            <h2 style="text-decoration: underline;">CHESS CUBE</h2>
+        <div style="margin: 0; border-bottom: 4px solid rgb(88, 172, 138); padding: 3px 0; " class="ui secondary menu">
+            <img src="https://w1.pngwing.com/pngs/956/831/png-transparent-green-grass-chess-knight-chess-piece-queen-bishop-and-knight-checkmate-pawn-king-thumbnail.png" style="width:80px;height:80px;">
+            <h2 style="text-decoration: underline;">CHECK MATE</h2>
             <div class="right menu">
                 <div style="margin-top:20px; height: 40px; padding-right: 20px; margin-right: 15px;"
                     class="ui labeled button" tabindex="0">
-                    <div class="ui button">
+                    <div class="ui button" style="background-color: rgb(88, 172, 138);">
                         <i class="user icon"></i> #Players
                     </div>
                     <a class="ui basic label">
@@ -36,8 +36,8 @@
 
                 <div style="margin-top:20px; height: 40px; padding-left: 20px;  margin-right: 15px;"
                     class="ui labeled button" tabindex="0">
-                    <div class="ui button">
-                        <i class="star icon"></i> #Rooms
+                    <div class="ui button" style="background-color: rgb(88, 172, 138);">
+                        <i class="bed icon"></i> #Rooms
                     </div>
                     <a class="ui basic label">
                         <span id="rooms">0</span>
@@ -94,12 +94,12 @@
             <!-- Chess Board -->
             <div id="chessGame" style="display: none;">
                 <!-- Color Schemes -->
-                <div style="text-align: center; margin: 10px;">
+                <!-- <div style="text-align: center; margin: 10px;">
                     <button id="grey_board" class="ui button black color_b">Grey</button>
                     <button id="orange_board" class="ui button grey color_b">Orange</button>
                     <button id="green_board" class="ui button grey color_b">Green</button>
                     <button id="blue_board" class="ui button grey color_b">Blue</button>
-                </div>
+                </div> -->
                 <!-- Status and PGN -->
                 <div id="statusPGN" style="text-align: center; display: none;">
                     <div>
@@ -127,7 +127,7 @@
     <!-- Chatting window -->
     <div id="chat"
         style=" background-color: white; display: none; text-align: right; position: fixed; bottom: 0; right: 0; width: 400px; margin-right: 10px; border: 2px solid black;">
-        <div class="ui button grey" style="border-radius: 0; width: 100%; padding: 15px; font-size: 16px;"
+        <div class="ui button grey" style="background-color: rgb(88, 172, 138); border-radius: 0; width: 100%; padding: 15px; font-size: 16px;"
             id="messageBox">
             Messages
         </div>
@@ -138,7 +138,7 @@
             </div>
             <form style="margin-bottom: 0;" class="ui form">
                 <div style="display: flex; justify-content: space-around;">
-                    <input class="form-control " id="inputMessage" type="text" placeholder="Send a Message"
+                    <input class="form-control " required id="inputMessage" type="text" placeholder="Send a Message"
                         style="margin-right: 10px;">
                     <button class="ui black button" id="send">Send</button>
                 </div>
@@ -146,8 +146,9 @@
         </div>
     </div>
     <div
-        style="background-color: black; color: white; margin-top:auto; padding: 15px; text-align: center; font-size: 15px;">
-        <i>"Avoid the crowd. Do your own thinking independently. Be the chess player, not the chess piece"</i></div>
+        style="background-color: rgb(88, 172, 138); color: white; margin-top:auto; padding: 15px; text-align: center; font-size: 15px;">
+        <i>"Check mate"</i></div>
+   
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"
         integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="./js/semantic.min.js"></script>
