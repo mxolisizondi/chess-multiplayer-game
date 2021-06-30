@@ -306,8 +306,8 @@ multiPlayerEl.addEventListener('click', (e) => {
 })
 
 const applyColorScheme = (black, white) => {
-    black = "#58AC8A";
-    white = "#FFFFFF";
+    // black = "#58AC8A";
+    // white = "#FFFFFF";
     const blackEl = document.querySelectorAll('.black-3c85d');
     for (var i = 0; i < blackEl.length; i++) {
         blackEl[i].style.backgroundColor = black;
@@ -330,45 +330,45 @@ const removeClass = () => {
 }
 
 // // Color Buttons
-// document.getElementById('grey_board').addEventListener('click', e => {
-//     e.preventDefault();
-//     removeClass();
-//     document.getElementById('grey_board').classList.add('black');
-//     document.getElementById('orange_board').classList.add('grey');
-//     document.getElementById('green_board').classList.add('grey');
-//     document.getElementById('blue_board').classList.add('grey');
-//     applyColorScheme("#E1E1E1", "#FFFFFF");
-// })
+document.getElementById('grey_board').addEventListener('click', e => {
+    e.preventDefault();
+    removeClass();
+    document.getElementById('grey_board').classList.add('black');
+    document.getElementById('orange_board').classList.add('grey');
+    document.getElementById('green_board').classList.add('grey');
+    document.getElementById('blue_board').classList.add('grey');
+    applyColorScheme("#E1E1E1", "#FFFFFF");
+})
 
-// document.getElementById('orange_board').addEventListener('click', e => {
-//     e.preventDefault();
-//     removeClass();
-//     document.getElementById('grey_board').classList.add('grey');
-//     document.getElementById('orange_board').classList.add('black');
-//     document.getElementById('green_board').classList.add('grey');
-//     document.getElementById('blue_board').classList.add('grey');
-//     applyColorScheme("#D18B47", "#FFCE9E");
-// })
+document.getElementById('orange_board').addEventListener('click', e => {
+    e.preventDefault();
+    removeClass();
+    document.getElementById('grey_board').classList.add('grey');
+    document.getElementById('orange_board').classList.add('black');
+    document.getElementById('green_board').classList.add('grey');
+    document.getElementById('blue_board').classList.add('grey');
+    applyColorScheme("#D18B47", "#FFCE9E");
+})
 
-// document.getElementById('green_board').addEventListener('click', e => {
-//     e.preventDefault();
-//     removeClass();
-//     document.getElementById('grey_board').classList.add('grey');
-//     document.getElementById('orange_board').classList.add('grey');
-//     document.getElementById('green_board').classList.add('black');
-//     document.getElementById('blue_board').classList.add('grey');
-//     applyColorScheme("#58AC8A", "#FFFFFF");
-// })
+document.getElementById('green_board').addEventListener('click', e => {
+    e.preventDefault();
+    removeClass();
+    document.getElementById('grey_board').classList.add('grey');
+    document.getElementById('orange_board').classList.add('grey');
+    document.getElementById('green_board').classList.add('black');
+    document.getElementById('blue_board').classList.add('grey');
+    applyColorScheme("#58AC8A", "#FFFFFF");
+})
 
-// document.getElementById('blue_board').addEventListener('click', e => {
-//     e.preventDefault();
-//     removeClass();
-//     document.getElementById('grey_board').classList.add('grey');
-//     document.getElementById('orange_board').classList.add('grey');
-//     document.getElementById('green_board').classList.add('grey');
-//     document.getElementById('blue_board').classList.add('black');
-//     applyColorScheme("#727FA2", "#C3C6BE");
-// })
+document.getElementById('blue_board').addEventListener('click', e => {
+    e.preventDefault();
+    removeClass();
+    document.getElementById('grey_board').classList.add('grey');
+    document.getElementById('orange_board').classList.add('grey');
+    document.getElementById('green_board').classList.add('grey');
+    document.getElementById('blue_board').classList.add('black');
+    applyColorScheme("#727FA2", "#C3C6BE");
+})
 
 // Messages Modal
 document.getElementById('messageBox').addEventListener('click', e => {
